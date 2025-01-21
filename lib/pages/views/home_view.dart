@@ -1245,10 +1245,7 @@ class _HomeView extends State<HomeView> {
                         children: [
                           FutureBuilder(
                             future: WpApi.fecthWpNewsCategory(
-                                wppost['categories'][0] != null &&
-                                        wppost['categories'].isNotEmpty
-                                    ? wppost['categories'][0]
-                                    : null),
+                                wppost['categories'][0]),
                             builder: (context, snapshot) {
                               if (snapshot.hasData) {
                                 var wpkategori =
