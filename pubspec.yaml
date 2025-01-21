@@ -69,6 +69,9 @@ flutter_icons:
   image_path: "assets/logo.jpg"
   min_sdk_android: 21 # android min sdk min:16, default 21
 
+dependency_overrides:
+  wakelock_windows: null
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -109,3 +112,10 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  # plugin:
+  #   platforms:
+  #     macos:
+  #       default_package: wakelock
+  #     windows:
+  #       default_package: wakelock
