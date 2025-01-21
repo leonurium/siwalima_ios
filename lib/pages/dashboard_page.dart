@@ -26,7 +26,7 @@ class _DashboardPage extends State<DashboardPage> {
       ),
       extendBody: true,
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.fromLTRB(50, 0, 50, 10),
+        padding: EdgeInsets.fromLTRB(50, 0, 50, MediaQuery.of(context).padding.bottom + 10),
         child: Container(
           decoration: BoxDecoration(
             color: Colors.white,                     
