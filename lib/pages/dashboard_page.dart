@@ -25,15 +25,11 @@ class _DashboardPage extends State<DashboardPage> {
         children: AppConstans.navMenu.map((e) => e['view'] as Widget).toList(),
       ),
       extendBody: true,
-      bottomNavigationBar: SafeArea(
+      bottomNavigationBar: SafeArea(        
         child: Padding(
           padding: const EdgeInsets.fromLTRB(50, 0, 50, 10),
-          child: Container(
-            decoration: BoxDecoration(
-              color: Colors.white,                     
-              border: Border.all(color: Colors.black12),
-              borderRadius: BorderRadius.circular(10)
-            ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(10),
             child: BottomNavigationBar(
               currentIndex: _selectedIndex,
               elevation: 0,
