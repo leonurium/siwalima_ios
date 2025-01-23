@@ -67,15 +67,17 @@ class _HomeView extends State<HomeView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: header(),
-        backgroundColor: Colors.white,
-        elevation: 1.0,
-        foregroundColor: Colors.black,
-        titleSpacing: 0,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: header(),
+          backgroundColor: Colors.white,
+          elevation: 1.0,
+          foregroundColor: Colors.black,
+          titleSpacing: 0,
+        ),
+        body: homeMainApp(),
       ),
-      body: homeMainApp(),
     );
   }
 
