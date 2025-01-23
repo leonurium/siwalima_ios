@@ -27,7 +27,7 @@ class _DashboardPage extends State<DashboardPage> {
       extendBody: true,
       bottomNavigationBar: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(50, 0, 50, 10),
+          padding: const EdgeInsets.fromLTRB(50, 0, 50, 2),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,                     
