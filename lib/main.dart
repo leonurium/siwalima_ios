@@ -17,40 +17,39 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          //platform: TargetPlatform.iOS,
-          primaryColor: AppColors.primary,
-          scaffoldBackgroundColor: Colors.white,
-          colorScheme: ColorScheme.light(
-            primary: AppColors.primary,
-            secondary: AppColors.secondary,
-          ),
-          appBarTheme: const AppBarTheme(
-            color: Colors.white,           
-          ),
-          textTheme: GoogleFonts.poppinsTextTheme(),
-          elevatedButtonTheme: ElevatedButtonThemeData(
-            style: ButtonStyle(
-              backgroundColor: MaterialStatePropertyAll(AppColors.primary),
-              shape: MaterialStatePropertyAll(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        //platform: TargetPlatform.iOS,
+        primaryColor: AppColors.primary,
+        backgroundColor: Colors.white,
+        scaffoldBackgroundColor: Colors.white,
+        colorScheme: ColorScheme.light(
+          primary: AppColors.primary,
+          secondary: AppColors.secondary,
+        ),
+        appBarTheme: const AppBarTheme(
+          color: Colors.white,           
+        ),
+        textTheme: GoogleFonts.poppinsTextTheme(),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+            backgroundColor: MaterialStatePropertyAll(AppColors.primary),
+            shape: MaterialStatePropertyAll(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
               ),
-              padding: const MaterialStatePropertyAll(
-                EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-              ),
-              textStyle: const MaterialStatePropertyAll(
-                TextStyle(fontSize: 15),
-              ),
+            ),
+            padding: const MaterialStatePropertyAll(
+              EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+            ),
+            textStyle: const MaterialStatePropertyAll(
+              TextStyle(fontSize: 15),
             ),
           ),
         ),
-        home: const DashboardPage(),
       ),
+      home: const DashboardPage(),
     );
   }
 }
