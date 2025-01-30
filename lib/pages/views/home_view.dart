@@ -70,8 +70,7 @@ class _HomeView extends State<HomeView> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: header(),
-          backgroundColor: Colors.white,
+          title: header(),          
           elevation: 1.0,
           foregroundColor: Colors.black,
           titleSpacing: 0,
