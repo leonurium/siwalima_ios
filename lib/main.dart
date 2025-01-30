@@ -21,9 +21,8 @@ class MainApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          //platform: TargetPlatform.iOS,
+          platform: TargetPlatform.iOS,
           primaryColor: AppColors.primary,
-          backgroundColor: Colors.white,
           scaffoldBackgroundColor: Colors.white,
           colorScheme: ColorScheme.light(
             primary: AppColors.primary,
