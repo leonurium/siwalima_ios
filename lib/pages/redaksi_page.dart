@@ -448,7 +448,7 @@ class _RedaksiPageState extends State<RedaksiPage> {
                     "Jl. Raya Diponegoro No. 20 Ambon, 97124",
                     style: TextStyle(
                       color: AppColors.primary,
-                      fontSize: 19,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -456,7 +456,7 @@ class _RedaksiPageState extends State<RedaksiPage> {
                     "Telepon: (+62)911 347666",
                     style: TextStyle(
                       color: AppColors.primary,
-                      fontSize: 20,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -464,7 +464,7 @@ class _RedaksiPageState extends State<RedaksiPage> {
                     "Fax: (+62)911 341137",
                     style: TextStyle(
                       color: AppColors.primary,
-                      fontSize: 20,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -472,7 +472,7 @@ class _RedaksiPageState extends State<RedaksiPage> {
                     "Email: siwalimanews@yahoo.com",
                     style: TextStyle(
                       color: AppColors.primary,
-                      fontSize: 20,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
