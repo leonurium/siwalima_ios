@@ -72,6 +72,7 @@ class _HomeView extends State<HomeView> {
         appBar: AppBar(
           title: header(),
           backgroundColor: Colors.white,
+          surfaceTintColor: Colors.white,
           elevation: 1.0,
           foregroundColor: Colors.black,
           titleSpacing: 0,

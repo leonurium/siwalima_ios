@@ -4,8 +4,11 @@ import 'package:siwalima_ios/pages/categorysuplemencard.dart';
 //import 'package:siwalima_ios/pages/views/search_view.dart';
 import '../../config/app_assets.dart';
 //import '../../config/nav.dart';
+import '../../config/app_colors.dart';
+import '../../config/nav.dart';
 import '../../model/listkategori.dart';
 import '../categorycard.dart';
+import '../redaksi_page.dart';
 
 class KategoriView extends StatefulWidget {
   const KategoriView({super.key});
@@ -89,6 +92,50 @@ class _KategoriViewState extends State<KategoriView> {
                             category: categoriessuplemen[index]);
                       },
                     ),
+                  ),
+                ),
+                divider(),
+                const Padding(
+                  padding: EdgeInsets.only(left: 8),
+                  child: Text(
+                    "Redaksi",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(32, 16, 8, 8),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          Nav.push(context, const RedaksiPage());
+                        },
+                        child: Icon(
+                          Icons.people_rounded,
+                          size: 32,
+                          color: AppColors.primary,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      InkWell(
+                        onTap: () {
+                          Nav.push(context, const RedaksiPage());
+                        },
+                        child: Text(
+                          "Tim & Kontak",
+                          style: TextStyle(
+                            color: AppColors.primary,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],

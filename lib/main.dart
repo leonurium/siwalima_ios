@@ -29,7 +29,8 @@ class MainApp extends StatelessWidget {
             secondary: AppColors.secondary,
           ),
           appBarTheme: const AppBarTheme(            
-            color: Colors.white,                     
+            color: Colors.white,
+            surfaceTintColor: Colors.white                     
           ),
           textTheme: GoogleFonts.poppinsTextTheme(),
           elevatedButtonTheme: ElevatedButtonThemeData(
